@@ -1,5 +1,5 @@
 # RAMP data on the titanic classification dataset
-
+ 
 Authors: Alexandre Gramfort & Balazs Kegl
 
 [![Build Status](https://travis-ci.org/ramp-data/titanic.svg?branch=master)](https://travis-ci.org/ramp-data/titanic)

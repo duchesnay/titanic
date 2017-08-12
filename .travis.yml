@@ -11,7 +11,7 @@ before_install:
 install:
     - conda create -n testenv --yes pip python=$PYTHON_VERSION
     - source activate testenv
-    - conda install --yes --quiet numpy scipy scikit-learn pandas
+    - conda install --yes --quiet numpy scipy scikit-learn pandas scikit-image
     - pip install codecov
     - pip install -q flake8
     - mkdir ramp-kits

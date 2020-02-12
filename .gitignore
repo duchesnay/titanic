@@ -17,5 +17,11 @@ dist/
 
 .nfs*
 
-/data/public_train.csv
-/data/public_test.csv
+/data/train.csv.bz2
+/data/test.csv.bz2
+/data/public_train.csv.bz2
+/data/public_test.csv.bz2
+
+.vscode
+
+/data/*

@@ -1,4 +1,4 @@
-import os
+}import os
 
 import click
 import pandas as pd
@@ -22,6 +22,7 @@ OSF_ARCHIVE = [
         revision=1,
     ),
 ]
+
 
 @click.command()
 @click.option(

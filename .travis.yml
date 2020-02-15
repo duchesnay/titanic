@@ -10,7 +10,7 @@ before_install:
 install:
     - conda create -n testenv --yes pip python=$PYTHON_VERSION
     - source activate testenv
-    - pip install --yes -r requirements.txt
+    - pip install -r requirements.txt
 script:
     - flake8 *.py
     - python prepare_data.py --token FG972TNJrpfCPaySOYWHUBMktOw9KPcTFxrI8MiD2UqjNug3T5p4UFprzwUBU4fjyyUibf

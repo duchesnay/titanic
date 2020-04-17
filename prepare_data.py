@@ -43,7 +43,17 @@ def prepare_data(token):
         df_train, test_size=0.2, random_state=random_state
     )
 
-    # 3- save the public data in a corresponding folder
+    # 3- save private data and the public data in a corresponding folder
+    if not os.path.exists(PATH_DATA):
+        os.makedirs(PATH_DATA)
+    df_train.to_csv(
+        os.path.join(PATH_DATA, "train.csv"),
+        index=False,
+    )
+    df_test.to_csv(
+        os.path.join(PATH_DATA, "test.csv"),
+        index=False,
+    )
     public_dir = os.path.join(PATH_DATA, "public")
     if not os.path.exists(public_dir):
         os.makedirs(public_dir)
